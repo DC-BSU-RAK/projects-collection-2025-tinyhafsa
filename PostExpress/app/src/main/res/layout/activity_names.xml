@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".NamesActivity">
+
+    <!--page title-->
+    <TextView
+        android:id="@+id/namesTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Sender / Receiver"
+        android:textColor="@color/four"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--decoration image-->
+    <ImageView
+        android:id="@+id/namesFlowersImage"
+        android:layout_width="224dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginBottom="-20dp"
+        android:rotation="-18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/flowers" />
+
+    <!--divider image-->
+    <ImageView
+        android:id="@+id/namesDividerImage"
+        android:layout_width="345dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/divider" />
+
+    <!--names input background-->
+    <ImageView
+        android:id="@+id/namesEntryImage"
+        android:layout_width="320dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namesDividerImage"
+        app:layout_constraintVertical_bias="0.084"
+        app:srcCompat="@drawable/names_entry" />
+
+    <!--to title-->
+    <TextView
+        android:id="@+id/namesToText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="238dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="to:"
+        android:textColor="@color/four"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--from title-->
+    <TextView
+        android:id="@+id/namesFromText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="390dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="from:"
+        android:textColor="@color/four"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--continue button-->
+    <Button
+        android:id="@+id/namesContinueButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="544dp"
+        android:backgroundTint="@color/four"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Continue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--receiver name input-->
+    <EditText
+        android:id="@+id/messageEntry"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/two"
+        android:fontFamily="@font/hachi_maru_pop"
+        android:hint="receiver's name"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/namesEntryImage" />
+
+    <!--sender name input-->
+    <EditText
+        android:id="@+id/namesFromEntry"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="253dp"
+        android:backgroundTint="@color/two"
+        android:fontFamily="@font/hachi_maru_pop"
+        android:hint="sender's name"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/namesEntryImage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

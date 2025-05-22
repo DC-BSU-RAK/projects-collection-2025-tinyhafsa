@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00D2E0FB"
+    android:backgroundTint="#00FFFFFF"
+    tools:context=".InstructionsPopup">
+
+    <!--background image-->
+    <ImageView
+        android:id="@+id/instructionsBgImage"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        tools:srcCompat="@drawable/instructions_bg" />
+
+    <!--close button-->
+    <Button
+        android:id="@+id/instructionsCloseButton"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/four"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Close"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/instructionsBgImage"
+        app:layout_constraintStart_toStartOf="@+id/instructionsBgImage" />
+
+    <!--page title text-->
+    <TextView
+        android:id="@+id/instructionsTitleText"
+        android:layout_width="207dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="112dp"
+        android:fontFamily="@font/meddon"
+        android:text="Send a Postcard"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/four"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/instructionsBgImage"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/instructionsBgImage" />
+
+    <!--instructions-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="245dp"
+        android:layout_height="226dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:paddingStart="5dp"
+        android:text=" 1. Enter your name and the recipient’s name \n\n 2. Select a stamp \n\n 3. Select an image for the back of the postcard \n\n 4. Preview final postcard \n\n 5. Send! "
+        android:textAlignment="textStart"
+        android:textColor="@color/four"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/instructionsBgImage"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionsTitleText" />
+
+    <!--decoration image-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="36dp"
+        android:rotation="-7"
+        android:rotationY="181"
+        app:layout_constraintBottom_toBottomOf="@+id/instructionsBgImage"
+        app:layout_constraintEnd_toEndOf="@+id/instructionsBgImage"
+        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/flowers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

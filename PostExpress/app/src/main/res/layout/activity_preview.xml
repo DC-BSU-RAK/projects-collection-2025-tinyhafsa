@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".PreviewActivity">
+
+    <!--preview - back of postcard bg-->
+    <ImageView
+        android:id="@+id/imagePreviewBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previewDividerImage"
+        app:srcCompat="@drawable/image_preview" />
+
+    <!--send button-->
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="692dp"
+        android:backgroundTint="@color/four"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Send"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--change button-->
+    <Button
+        android:id="@+id/changeButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="692dp"
+        android:backgroundTint="@color/four"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Change"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--divider image-->
+    <ImageView
+        android:id="@+id/previewDividerImage"
+        android:layout_width="345dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/divider" />
+
+    <!--page title-->
+    <TextView
+        android:id="@+id/previewTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Preview"
+        android:textColor="@color/four"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--preview - message background-->
+    <ImageView
+        android:id="@+id/messagePreviewBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePreviewBg"
+        app:srcCompat="@drawable/message_preview" />
+
+    <!--sender name-->
+    <TextView
+        android:id="@+id/senderPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="202dp"
+        android:fontFamily="@font/hachi_maru_pop"
+        android:text="hafsa"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/messagePreviewBg"
+        app:layout_constraintTop_toTopOf="@+id/messagePreviewBg" />
+
+    <!--stamp-->
+    <ImageView
+        android:id="@+id/stampPreview"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:rotation="9"
+        app:layout_constraintEnd_toEndOf="@+id/messagePreviewBg"
+        app:layout_constraintTop_toTopOf="@+id/messagePreviewBg"
+        app:srcCompat="@drawable/stamp1" />
+
+    <!--postcard back image-->
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="126dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image1" />
+
+    <!--receiver name-->
+    <TextView
+        android:id="@+id/receieverPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="168dp"
+        android:fontFamily="@font/hachi_maru_pop"
+        android:text="mama"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/messagePreviewBg"
+        app:layout_constraintTop_toTopOf="@+id/messagePreviewBg" />
+
+    <!--greeting-->
+    <TextView
+        android:id="@+id/greetingPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/hachi_maru_pop"
+        android:text="Dear,"
+        app:layout_constraintStart_toStartOf="@+id/messagePreviewBg"
+        app:layout_constraintTop_toTopOf="@+id/messagePreviewBg" />
+
+    <!--message-->
+    <TextView
+        android:id="@+id/messagePreview"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/hachi_maru_pop"
+        android:lineSpacingExtra="6sp"
+        android:text="this is a sample message. this is another line. this is the third line."
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/messagePreviewBg"
+        app:layout_constraintTop_toTopOf="@+id/messagePreviewBg" />
+
+    <!--signoff-->
+    <TextView
+        android:id="@+id/signoffPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="208dp"
+        android:fontFamily="@font/hachi_maru_pop"
+        android:text="With Love"
+        app:layout_constraintStart_toStartOf="@+id/messagePreviewBg"
+        app:layout_constraintTop_toTopOf="@+id/messagePreviewBg" />
+
+    <!--decoration image-->
+    <ImageView
+        android:id="@+id/previewFlowersImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="-10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/flowers" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

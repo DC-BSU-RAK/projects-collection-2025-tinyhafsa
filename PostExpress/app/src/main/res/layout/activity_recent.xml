@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".RecentActivity">
+
+    <!--counter bg-->
+    <ImageView
+        android:id="@+id/postboxImage"
+        android:layout_width="300dp"
+        android:layout_height="410dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/postbox" />
+
+    <!--counter-->
+    <TextView
+        android:id="@+id/postcardCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/orbitron"
+        android:text="0"
+        android:textColor="@color/four"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recentTitleText" />
+
+    <!--counter title-->
+    <TextView
+        android:id="@+id/recentTitleText"
+        android:layout_width="202dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/meddon"
+        android:lineSpacingExtra="-10sp"
+        android:text="Postcards Sent"
+        android:textAlignment="center"
+        android:textColor="@color/four"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/postboxImage" />
+
+    <!--recent postcard image-->
+    <ImageView
+        android:id="@+id/recentPostcardImage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postboxImage"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/image1" />
+
+    <!--recent postcard - names bg-->
+    <ImageView
+        android:id="@+id/recentNamesBg"
+        android:layout_width="214dp"
+        android:layout_height="214dp"
+        app:layout_constraintBottom_toBottomOf="@+id/recentPostcardImage"
+        app:layout_constraintEnd_toEndOf="@+id/recentPostcardImage"
+        app:layout_constraintStart_toStartOf="@+id/recentPostcardImage"
+        app:layout_constraintTop_toTopOf="@+id/recentPostcardImage"
+        app:layout_constraintVertical_bias="0.507"
+        app:srcCompat="@drawable/names_entry" />
+
+    <!--from-->
+    <TextView
+        android:id="@+id/recentFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/montserrat"
+        android:text="from:"
+        android:textColor="@color/four"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/recentNamesBg"
+        app:layout_constraintTop_toTopOf="@+id/recentNamesBg" />
+
+    <!--to-->
+    <TextView
+        android:id="@+id/recentTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat"
+        android:text="to:"
+        android:textColor="@color/four"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/recentNamesBg"
+        app:layout_constraintTop_toTopOf="@+id/recentNamesBg" />
+
+    <!--recent recipient-->
+    <TextView
+        android:id="@+id/recentReceiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/hachi_maru_pop"
+        android:text="receiver"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/recentNamesBg"
+        app:layout_constraintTop_toTopOf="@+id/recentNamesBg" />
+
+    <!--recent sender-->
+    <TextView
+        android:id="@+id/recentSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="149dp"
+        android:fontFamily="@font/hachi_maru_pop"
+        android:text="sender"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/recentNamesBg"
+        app:layout_constraintTop_toTopOf="@+id/recentNamesBg" />
+
+    <!--back button-->
+    <Button
+        android:id="@+id/recentBackButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/four"
+        android:fontFamily="@font/montserrat_light"
+        android:text="back"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/four" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

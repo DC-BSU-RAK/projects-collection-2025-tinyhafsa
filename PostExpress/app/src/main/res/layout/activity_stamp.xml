@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".StampActivity">
+
+    <!--page title-->
+    <TextView
+        android:id="@+id/stampTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Stamp"
+        android:textColor="@color/four"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--divider image-->
+    <ImageView
+        android:id="@+id/stampDividerImage"
+        android:layout_width="345dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/divider" />
+
+    <!--scroll view - stamps -->
+    <ScrollView
+        android:id="@+id/stampScroll"
+        android:layout_width="330dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/two"
+        android:fadingEdge="none"
+        android:scrollbarSize="6dp"
+        android:scrollbarThumbVertical="@color/four"
+        android:scrollbarTrackVertical="@color/two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stampDividerImage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/two"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/stamp1"
+                android:layout_width="300dp"
+                android:layout_height="280dp"
+                android:layout_margin="16dp"
+                android:background="@color/two"
+                android:clickable="true"
+                android:contentDescription="Stamp 1"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/stamp1" />
+
+            <ImageButton
+                android:id="@+id/stamp2"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                android:background="@color/two"
+                android:clickable="true"
+                android:contentDescription="Stamp 2"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/stamp2" />
+
+            <ImageButton
+                android:id="@+id/stamp3"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_margin="16dp"
+                android:background="@color/two"
+                android:clickable="true"
+                android:contentDescription="Stamp 3"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/stamp3" />
+
+            <ImageButton
+                android:id="@+id/stamp4"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_margin="16dp"
+                android:background="@color/two"
+                android:clickable="true"
+                android:contentDescription="Stamp 1"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/stamp4" />
+
+            <ImageButton
+                android:id="@+id/stamp5"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                android:background="@color/two"
+                android:clickable="true"
+                android:contentDescription="Stamp 5"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/stamp5" />
+
+            <ImageButton
+                android:id="@+id/stamp6"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_margin="16dp"
+                android:background="@color/two"
+                android:clickable="true"
+                android:contentDescription="Stamp 6"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/stamp6" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--continue button-->
+    <Button
+        android:id="@+id/messagePreviewButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:backgroundTint="@color/four"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Continue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--decoration image-->
+    <ImageView
+        android:id="@+id/stampFlowersImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="635dp"
+        android:rotation="-7"
+        android:rotationY="-175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flowers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
