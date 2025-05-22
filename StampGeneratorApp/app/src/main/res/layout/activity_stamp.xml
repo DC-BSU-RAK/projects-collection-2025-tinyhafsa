@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".StampActivity">
+
+    <!--category name-->
+    <TextView
+        android:id="@+id/categoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:fontFamily="@font/syne_tactile"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/four"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--subject name-->
+    <TextView
+        android:id="@+id/subjectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/syne_tactile"
+        android:text="subject"
+        android:textColor="@color/four"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectGroup" />
+
+    <!--subejct radio buttons - group-->
+    <RadioGroup
+        android:id="@+id/subjectGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/subject1Btn"
+            android:layout_width="130dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:button="@null"
+            android:rotation="-9" />
+
+        <RadioButton
+            android:id="@+id/subject2Btn"
+            android:layout_width="130dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:button="@null"
+            android:rotation="5" />
+    </RadioGroup>
+
+    <!--show stamp button-->
+    <ImageButton
+        android:id="@+id/showStampBtn"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#00FFFFFF"
+        android:rotation="-12"
+        android:scaleType="fitXY"
+        android:src="@drawable/show_stamp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectGroup"
+        app:layout_constraintVertical_bias="0.703" />
+
+    <!--category radio buttons group-->
+    <RadioGroup
+        android:id="@+id/categoryGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/flowerCategory"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/flower_category"
+            android:button="@null"
+            android:rotation="5"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <RadioButton
+            android:id="@+id/fruitCategory"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/fruit_category"
+            android:button="@null"
+            android:rotation="-3"
+            android:scaleType="centerCrop" />
+
+        <RadioButton
+            android:id="@+id/insectCategory"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/insect_category"
+            android:button="@null"
+            android:rotation="-3" />
+    </RadioGroup>
+
+    <!--instructions popup button-->
+    <ImageButton
+        android:id="@+id/instructionsBtn"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#07FFFFFF"
+        android:rotation="15"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/about_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
